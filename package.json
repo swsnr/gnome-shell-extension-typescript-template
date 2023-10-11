@@ -1,0 +1,26 @@
+{
+  "name": "gnome-shell-extension-vscode-search-provider",
+  "version": "1.0.0",
+  "description": "GNOME shell extension to search recent VSCode workspaces",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swsnr/gnome-shell-extension-vscode-search-provider.git"
+  },
+  "author": "Sebastian Wiesner <sebastian@swsnr.de>",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/swsnr/gnome-shell-extension-vscode-search-provider/issues"
+  },
+  "homepage": "https://github.com/swsnr/gnome-shell-extension-vscode-search-provider#readme",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "generate:gir-types": "ts-for-gir generate",
+    "compile": "tsc --build tsconfig.json"
+  },
+  "devDependencies": {
+    "@ts-for-gir/cli": "^3.2.2",
+    "@tsconfig/strictest": "^2.0.2",
+    "typescript": "^5.2.2"
+  }
+}
