@@ -16,11 +16,17 @@
   "private": true,
   "scripts": {
     "generate:gir-types": "ts-for-gir generate",
-    "compile": "tsc --build tsconfig.json"
+    "compile": "tsc --build tsconfig.json",
+    "lint": "eslint"
   },
   "devDependencies": {
     "@ts-for-gir/cli": "^3.2.2",
     "@tsconfig/strictest": "^2.0.2",
+    "@typescript-eslint/eslint-plugin": "^6.7.5",
+    "@typescript-eslint/parser": "^6.7.5",
+    "eslint": "^8.51.0",
+    "eslint-plugin-functional": "^6.0.0",
+    "eslint-plugin-promise": "^6.1.1",
     "typescript": "^5.2.2"
   }
 }
