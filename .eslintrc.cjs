@@ -7,7 +7,8 @@ module.exports = {
         "plugin:functional/external-typescript-recommended",
         "plugin:functional/recommended",
         "plugin:functional/no-mutations",
-        "plugin:promise/recommended"
+        "plugin:promise/recommended",
+        "prettier"
     ],
     parser: "@typescript-eslint/parser",
     parserOptions: {
