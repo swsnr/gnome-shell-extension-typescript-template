@@ -24,6 +24,6 @@ module.exports = {
     "functional/no-return-void": ["off"],
     "functional/functional-parameters": ["off"],
   },
-  // These are either generated or config files
-  ignorePatterns: ["*.js", "*.cjs", "@types/gir-generated"],
+  // These are either generated or config files or no real typescript
+  ignorePatterns: ["*.js", "*.cjs", "*.d.ts"],
 };
