@@ -4,5 +4,6 @@
   "description": "Typescript template for GNOME shell extensions",
   "url": "https://github.com/swsnr/gnome-shell-extension-typescript-template",
   "version": "1",
-  "shell-version": ["45"]
+  "shell-version": ["45"],
+  "settings-schema": "org.gnome.shell.extensions.typescript-template"
 }

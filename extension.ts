@@ -22,8 +22,12 @@ import { Extension } from "resource:///org/gnome/shell/extensions/extension.js";
 
 export default class HelloWorldExtension extends Extension {
   override enable(): void {
-    const user = GLib.get_user_name();
-    console.log(`Hello ${user} from ${this.metadata.name}`);
+    const settings = this.getSettings();
+    // eslint-disable-next-line functional/no-conditional-statements
+    if (settings.get_boolean("say-hello")) {
+      const user = GLib.get_user_name();
+      console.log(`Hello ${user} from ${this.metadata.name}`);
+    }
   }
 
   override disable(): void {
