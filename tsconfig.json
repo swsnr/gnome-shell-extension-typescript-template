@@ -1,15 +1,10 @@
 {
-    "extends": "@tsconfig/strictest/tsconfig.json",
-    "compilerOptions": {
-        "target": "ES2017",
-        "module": "ES6",
-        "lib": [
-            "ES2017"
-        ],
-        "removeComments": false
-    },
-    "include": [
-        "*.ts",
-        "generated-gir-types/*.ts"
-    ]
+  "extends": "@tsconfig/strictest/tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2017",
+    "module": "ES6",
+    "lib": ["ES2017"],
+    "removeComments": false
+  },
+  "include": ["*.ts", "generated-gir-types/*.ts"]
 }
