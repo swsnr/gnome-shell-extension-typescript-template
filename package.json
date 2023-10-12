@@ -18,8 +18,7 @@
     "generate:gir-types": "ts-for-gir generate",
     "compile": "tsc --build tsconfig.json",
     "lint": "eslint *.ts",
-    "format": "prettier --write *.ts *.json *.cjs",
-    "format:check": "prettier --check *.ts *.json *.cjs",
+    "format": "prettier *.ts *.json *.cjs",
     "pack": "gnome-extensions pack --extra-source=README.md --extra-source=LICENSE-GPL2 --extra-source=LICENSE-MPL2",
     "build": "npm run compile && npm run pack"
   },
