@@ -17,17 +17,29 @@
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU General Public License for more details.
 
-import GLib from "gi://GLib?version=2.0";
-import { Extension } from "resource:///org/gnome/shell/extensions/extension.js";
+import Gio from "gi://Gio";
 
-export default class HelloWorldExtension extends Extension {
-  override enable(): void {
-    const user = GLib.get_user_name();
-    console.log(`Hello ${user} from ${this.metadata.name}`);
-  }
+// See https://gjs.guide/extensions/topics/extension.html#types
+export declare interface ExtensionMetadata {
+  readonly uuid: string;
+  readonly name: string;
+  readonly description: string;
+  readonly "shell-version": readonly string[];
+  readonly dir: Gio.File;
+  readonly path: string;
+}
 
-  override disable(): void {
-    const user = GLib.get_user_name();
-    console.log(`Goodbye ${user} from ${this.metadata.name}`);
-  }
+declare class ExtensionBase {
+  constructor(metadata: ExtensionMetadata);
+
+  get metadata(): ExtensionMetadata;
+  getSettings(schema?: string): Gio.Settings;
+}
+
+export declare class Extension extends ExtensionBase {
+  constructor(metadata: ExtensionMetadata);
+
+  enable(): void;
+
+  disable(): void;
 }
