@@ -17,7 +17,7 @@
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU General Public License for more details.
 
-import Gio from "gi://Gio";
+import type Gio from "../../gir-generated/gio-2.0.js";
 
 // See https://gjs.guide/extensions/topics/extension.html#types
 export declare interface ExtensionMetadata {
