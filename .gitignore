@@ -3,5 +3,8 @@
 # JS outputs
 *.js
 
+# Extension artifact
+/*.zip
+
 # But allow certain config files
 !/.ts-for-girrc.js
