@@ -20,5 +20,10 @@ module.exports = {
   root: true,
   rules: {
     "functional/no-expression-statements": ["error", { ignoreVoid: true }],
+    "functional/no-classes": ["off"],
+    "functional/no-return-void": ["off"],
+    "functional/functional-parameters": ["off"],
   },
+  // These are either generated or config files
+  ignorePatterns: ["*.js", "*.cjs", "@types/gir-generated"],
 };

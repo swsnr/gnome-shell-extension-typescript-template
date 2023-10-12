@@ -6,5 +6,6 @@
     "lib": ["ES2017"],
     "removeComments": false
   },
-  "include": ["*.ts", "generated-gir-types/*.ts"]
+  "include": ["*.ts", "@types/**/*.ts"],
+  "exclude": [".ts-for-girrc.js", ".eslintrc.cjs"]
 }
