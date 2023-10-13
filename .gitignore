@@ -1,10 +1,11 @@
 /node_modules/
 
-# JS outputs
-*.js
 
 # Extension artifact
-/*.zip
+/dist/
+
+# JS outputs
+*.js
 
 # But allow certain config files
 !/.ts-for-girrc.js
