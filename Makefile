@@ -35,3 +35,12 @@ dist: compile
 	gnome-extensions pack --force --out-dir dist \
 		$(addprefix --extra-source=,$(DIST-EXTRA-SRC))
 
+# Install to local home directory; this simply unpacks the zip file as GNOME would do
+.PHONY: install-home
+install-home: dist
+	mkdir -p $(HOME-DESTDIR)
+	bsdtar -xf dist/$(UUID).shell-extension.zip -C $(HOME-DESTDIR)
+
+.PHONY: uninstall-home
+uninstall-home:
+	rm -rf $(HOME-DESTDIR)
