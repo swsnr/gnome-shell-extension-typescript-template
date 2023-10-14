@@ -97,7 +97,7 @@ This programm is subject to the terms of the Mozilla Public
 License, v. 2.0.If a copy of the MPL was not distributed with this
 file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
-Alternatively, the contents of this file may be used under the terms
+Alternatively, this program may be used under the terms
 of the GNU General Public License Version 2 or later, as described below:
 
 This program is free software; you can redistribute it and/or modify
