@@ -4,7 +4,7 @@
 # Extension artifact
 /dist/
 
-# JS outputs
+# Build outputs
 *.js
 
 # But allow certain config files

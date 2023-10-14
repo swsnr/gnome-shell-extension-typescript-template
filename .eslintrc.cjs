@@ -23,6 +23,7 @@ module.exports = {
     "functional/no-classes": ["off"],
     "functional/no-return-void": ["off"],
     "functional/functional-parameters": ["off"],
+    "functional/no-expression-statements": ["off"],
   },
   // These are either generated or config files or no real typescript
   ignorePatterns: ["*.js", "*.cjs", "*.d.ts"],

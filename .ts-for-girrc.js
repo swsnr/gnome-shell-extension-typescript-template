@@ -16,6 +16,8 @@ export default {
     "Shell-13",
     "Clutter-13",
     "St-13",
+    "Gtk-4.0",
+    "Adw-1",
   ],
   ignore: [],
   noNamespace: false,
