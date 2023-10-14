@@ -1,6 +1,4 @@
 export default {
-  print: false,
-  verbose: true,
   environments: ["gjs"],
   outdir: "@types/gir-generated",
   girDirectories: [
