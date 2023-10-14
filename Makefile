@@ -45,8 +45,26 @@ dist: compile
 .PHONY: install-home
 install-home: dist
 	mkdir -p $(HOME-DESTDIR)
-	bsdtar -xf dist/$(UUID).shell-extension.zip -C $(HOME-DESTDIR)
+	bsdtar -xf dist/$(UUID).shell-extension.zip -C $(HOME-DESTDIR) --no-same-owner
 
 .PHONY: uninstall-home
 uninstall-home:
 	rm -rf $(HOME-DESTDIR)
+
+# Install system wide, moving various parts to appropriate system directories
+.PHONY: install-system
+install-system: dist
+	install -d \
+		$(DESTDIR)/$(PREFIX)/share/gnome-shell/extensions/$(UUID) \
+		$(DESTDIR)/$(PREFIX)/share/glib-2.0/schemas
+	bsdtar -xf dist/$(UUID).shell-extension.zip \
+		-C $(DESTDIR)/$(PREFIX)/share/gnome-shell/extensions/$(UUID) --no-same-owner
+	mv $(DESTDIR)/$(PREFIX)/share/gnome-shell/extensions/$(UUID)/schemas/*.gschema.xml \
+		$(DESTDIR)/$(PREFIX)/share/glib-2.0/schemas
+	rm -rf $(DESTDIR)/$(PREFIX)/share/gnome-shell/extensions/$(UUID)/schemas
+
+.PHONY: uninstall-system
+uninstall-system:
+	rm -rf \
+		$(DESTDIR)/$(PREFIX)/share/gnome-shell/extensions/$(UUID) \
+		$(DESTDIR)/$(PREFIX)/share/glib-2.0/schemas/org.gnome.shell.extensions.swsnr-utc-clock.gschema.xml
