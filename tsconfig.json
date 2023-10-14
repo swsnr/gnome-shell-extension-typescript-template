@@ -19,11 +19,11 @@
       // and then how they're seen by prefs.js.
       "resource:///org/gnome/shell/*": ["./@types/gnome-shell/*"],
       "resource:///org/gnome/Shell/Extensions/js/*": ["./@types/gnome-shell/*"]
-    }
+    },
+    "skipLibCheck": true
   },
   "include": [
     "*.ts",
-    // "@types/gnome-shell/*.d.ts",
     // Include GJS global environment types
     "@types/gir-generated/ambient.d.ts",
     "@types/gir-generated/gjs.d.ts",
