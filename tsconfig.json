@@ -14,6 +14,9 @@
       "gi://Gio": ["./@types/gir-generated/gio-2.0.d.ts"],
       "gi://Gtk": ["./@types/gir-generated/gtk-4.0.d.ts"],
       "gi://Adw": ["./@types/gir-generated/adw-1.d.ts"],
+      "gi://St": ["./@types/gir-generated/st-13.d.ts"],
+      "gi://Clutter": ["./@types/gir-generated/clutter-13.d.ts"],
+      "gi://GnomeDesktop": ["./@types/gir-generated/gnomedesktop-4.0.d.ts"],
 
       // Our own types.  First as they are seen in GNOME shell extensions,
       // and then how they're seen by prefs.js.
