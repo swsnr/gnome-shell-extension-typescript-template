@@ -24,9 +24,9 @@ jobs:
       - name: Install gnome-shell
         run: |
           sudo apt-get update -qq
-          sudo apt-get install --no-install-recommends -qq -y gnome-shell
+          sudo apt-get install --no-install-recommends -qq -y gnome-shell strip-nondeterminism
       - run: npm ci
-      - run: make dist
+      - run: make dist-repro
       - uses: actions/upload-artifact@v3
         with:
           name: extension-build.zip

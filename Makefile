@@ -41,6 +41,11 @@ dist: compile
 	gnome-extensions pack --force --out-dir dist \
 		$(addprefix --extra-source=,$(DIST-EXTRA-SRC) $(UIDEFS))
 
+# Make a reproducible dist package
+.PHONY: dist-repro
+dist-repro: dist
+	strip-nondeterminism dist/$(UUID).shell-extension.zip
+
 # Install to local home directory; this simply unpacks the zip file as GNOME would do
 .PHONY: install-home
 install-home: dist
