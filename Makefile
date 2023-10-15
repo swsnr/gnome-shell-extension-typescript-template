@@ -72,4 +72,4 @@ install-system: dist
 uninstall-system:
 	rm -rf \
 		$(DESTDIR)/$(PREFIX)/share/gnome-shell/extensions/$(UUID) \
-		$(DESTDIR)/$(PREFIX)/share/glib-2.0/schemas/org.gnome.shell.extensions.swsnr-utc-clock.gschema.xml
+		$(DESTDIR)/$(PREFIX)/share/glib-2.0/schemas/org.gnome.shell.extensions.typescript-template.gschema.xml
