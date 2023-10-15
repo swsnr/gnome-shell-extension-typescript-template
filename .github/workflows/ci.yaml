@@ -27,7 +27,10 @@ jobs:
           sudo apt-get install --no-install-recommends -qq -y gnome-shell strip-nondeterminism
       - run: npm ci
       - run: make dist-repro
+      - run: |
+          cd dist
+          b2sum *.zip > B2SUMS.txt
       - uses: actions/upload-artifact@v3
         with:
           name: extension-build.zip
-          path: "dist/*.zip"
+          path: "dist/*"
