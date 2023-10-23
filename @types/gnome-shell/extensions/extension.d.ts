@@ -27,6 +27,7 @@ export declare interface ExtensionMetadata {
   readonly "shell-version": readonly string[];
   readonly dir: Gio.File;
   readonly path: string;
+  readonly url: string;
 }
 
 declare class ExtensionBase {

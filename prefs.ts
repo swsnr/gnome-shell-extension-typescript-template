@@ -87,9 +87,19 @@ export default class HelloWorldPreferences extends ExtensionPreferences {
     const aboutUI = this.loadUI("about.ui");
     const aboutWidget = aboutUI?.get_object("about");
     // eslint-disable-next-line functional/no-conditional-statements
-    if (aboutWidget) {
+    if (aboutUI && aboutWidget) {
       aboutGroup.add(aboutWidget as Gtk.Widget);
-      const licenseText = aboutUI?.get_object("license") as Gtk.TextView | null;
+
+      const name = aboutUI.get_object("name") as Gtk.Label | null;
+      name?.set_text(this.metadata.name);
+      const description = aboutUI.get_object("description") as Gtk.Label | null;
+      description?.set_text(this.metadata.description);
+      const github = aboutUI.get_object("github") as Gtk.LinkButton | null;
+      github?.set_uri(this.metadata.url);
+      const issues = aboutUI.get_object("issues") as Gtk.LinkButton | null;
+      issues?.set_uri(`${this.metadata.url}/issues`);
+
+      const licenseText = aboutUI.get_object("license") as Gtk.TextView | null;
       licenseText?.buffer.set_text(
         `Copyright Sebastian Wiesner <sebastian@swsnr.de>
 
