@@ -45,7 +45,6 @@ export default class HelloWorldPreferences extends ExtensionPreferences {
   }
 
   override fillPreferencesWindow(
-    // eslint-disable-next-line functional/prefer-immutable-types
     window: Adw.PreferencesWindow & TracksSettings,
   ): void {
     const settingsPage = new Adw.PreferencesPage({
@@ -66,7 +65,6 @@ export default class HelloWorldPreferences extends ExtensionPreferences {
 
     // Create a settings object and bind the row to our key.
     // Attach the settings object to the window to keep it alive while the window is alive.
-    // eslint-disable-next-line functional/immutable-data
     window._settings = this.getSettings();
     window._settings.bind(
       "say-hello",
@@ -86,7 +84,6 @@ export default class HelloWorldPreferences extends ExtensionPreferences {
 
     const aboutUI = this.loadUI("about.ui");
     const aboutWidget = aboutUI?.get_object("about");
-    // eslint-disable-next-line functional/no-conditional-statements
     if (aboutUI && aboutWidget) {
       aboutGroup.add(aboutWidget as Gtk.Widget);
 
