@@ -8,33 +8,6 @@ DIST-EXTRA-SRC = LICENSE-GPL2 LICENSE-MPL2
 BLUEPRINTS = $(addprefix ui/,about.blp)
 UIDEFS = $(addsuffix .ui,$(basename $(BLUEPRINTS)))
 
-$(UIDEFS): %.ui: %.blp
-	blueprint-compiler compile --output $@ $<
-
-.PHONY: generate
-generate:
-	npm run generate:gir-types
-
-.PHONY: format
-format:
-	npm run format -- --write
-
-.PHONY: lint
-lint:
-	npm run lint
-
-.PHONY: check
-check: lint
-	npm run format -- --check
-
-.PHONY: fix
-fix: format
-	npm run lint -- --fix
-
-.PHONY: compile
-compile: $(UIDEFS)
-	npm run compile
-
 .PHONY: dist
 dist: compile
 	mkdir -p ./dist/
@@ -73,3 +46,30 @@ uninstall-system:
 	rm -rf \
 		$(DESTDIR)/$(PREFIX)/share/gnome-shell/extensions/$(UUID) \
 		$(DESTDIR)/$(PREFIX)/share/glib-2.0/schemas/org.gnome.shell.extensions.typescript-template.gschema.xml
+
+.PHONY: compile
+compile: $(UIDEFS)
+	npm run compile
+
+.PHONY: generate
+generate:
+	npm run generate:gir-types
+
+.PHONY: format
+format:
+	npm run format -- --write
+
+.PHONY: lint
+lint:
+	npm run lint
+
+.PHONY: check
+check: lint
+	npm run format -- --check
+
+.PHONY: fix
+fix: format
+	npm run lint -- --fix
+
+$(UIDEFS): %.ui: %.blp
+	blueprint-compiler compile --output $@ $<
