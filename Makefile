@@ -57,6 +57,10 @@ uninstall-system:
 compile: $(UIDEFS)
 	npm run compile
 
+.PHONY: clean
+clean:
+	rm -rf ./dist/ ./build/
+
 .PHONY: generate
 generate:
 	npm run generate:gir-types
