@@ -5,7 +5,7 @@ HOME-DESTDIR = $(HOME)/.local/share/gnome-shell/extensions/$(UUID)
 UUID = typescript-template@swsnr.de
 
 DIST-EXTRA-SRC = LICENSE-GPL2 LICENSE-MPL2
-BLUEPRINTS = $(addprefix ui/,about.blp)
+BLUEPRINTS = $(wildcard ui/*.blp)
 UIDEFS = $(addsuffix .ui,$(basename $(BLUEPRINTS)))
 
 .PHONY: dist
