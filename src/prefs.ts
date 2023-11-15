@@ -18,6 +18,7 @@
 // GNU General Public License for more details.
 
 import GObject from "gi://GObject";
+import GLib from "gi://GLib";
 import Gio from "gi://Gio";
 import Gtk from "gi://Gtk";
 import Adw from "gi://Adw";
@@ -46,9 +47,42 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.`;
 
+const getTemplate = (name: string): string => {
+  const uri = GLib.uri_resolve_relative(
+    import.meta.url,
+    `ui/${name}.ui`,
+    GLib.UriFlags.NONE,
+  );
+  if (uri === null) {
+    throw new Error(`Failed to resolve URI for template ${name}!`);
+  }
+  return uri;
+};
+
 interface GeneralPageChildren {
   _sayHello: Adw.SwitchRow;
 }
+
+const GeneralPage = GObject.registerClass(
+  {
+    GTypeName: "GeneralPage",
+    Template: getTemplate("GeneralPage"),
+    InternalChildren: ["sayHello"],
+  },
+  class GeneralPage extends Adw.PreferencesPage {
+    constructor(settings: Gio.Settings) {
+      super();
+
+      const children = this as unknown as GeneralPageChildren;
+      settings.bind(
+        "say-hello",
+        children._sayHello,
+        "active",
+        Gio.SettingsBindFlags.DEFAULT,
+      );
+    }
+  },
+);
 
 interface AboutPageChildren {
   _extensionName: Gtk.Label;
@@ -58,59 +92,32 @@ interface AboutPageChildren {
   _extensionLicense: Gtk.TextView;
 }
 
+const AboutPage = GObject.registerClass(
+  {
+    GTypeName: "AboutPage",
+    Template: getTemplate("AboutPage"),
+    InternalChildren: [
+      "extensionName",
+      "extensionDescription",
+      "linkGithub",
+      "linkIssues",
+      "extensionLicense",
+    ],
+  },
+  class AboutPage extends Adw.PreferencesPage {
+    constructor(metadata: ExtensionMetadata) {
+      super();
+      const children = this as unknown as AboutPageChildren;
+      children._extensionName.set_text(metadata.name);
+      children._extensionDescription.set_text(metadata.description);
+      children._linkGithub.set_uri(metadata.url);
+      children._linkIssues.set_uri(`${metadata.url}/issues`);
+      children._extensionLicense.buffer.set_text(LICENSE, -1);
+    }
+  },
+);
+
 export default class HelloWorldPreferences extends ExtensionPreferences {
-  private loadPages(templateDirectory: Gio.File) {
-    const GeneralPage = GObject.registerClass(
-      {
-        GTypeName: "GeneralPage",
-        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-        Template: templateDirectory.get_child("GeneralPage.ui").get_uri()!,
-        InternalChildren: ["sayHello"],
-      },
-      class GeneralPage extends Adw.PreferencesPage {
-        constructor(settings: Gio.Settings) {
-          super();
-
-          const children = this as unknown as GeneralPageChildren;
-          settings.bind(
-            "say-hello",
-            children._sayHello,
-            "active",
-            Gio.SettingsBindFlags.DEFAULT,
-          );
-        }
-      },
-    );
-    const AboutPage = GObject.registerClass(
-      {
-        GTypeName: "AboutPage",
-        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-        Template: templateDirectory.get_child("AboutPage.ui").get_uri()!,
-        InternalChildren: [
-          "extensionName",
-          "extensionDescription",
-          "linkGithub",
-          "linkIssues",
-          "extensionLicense",
-        ],
-      },
-      class AboutPage extends Adw.PreferencesPage {
-        constructor(metadata: ExtensionMetadata) {
-          super();
-
-          // TODO: Find a better way to declare that an instance has a set of props
-          const children = this as unknown as AboutPageChildren;
-          children._extensionName.set_text(metadata.name);
-          children._extensionDescription.set_text(metadata.description);
-          children._linkGithub.set_uri(metadata.url);
-          children._linkIssues.set_uri(`${metadata.url}/issues`);
-          children._extensionLicense.buffer.set_text(LICENSE, -1);
-        }
-      },
-    );
-    return { GeneralPage, AboutPage };
-  }
-
   override fillPreferencesWindow(
     window: Adw.PreferencesWindow & {
       _settings: Gio.Settings;
@@ -119,10 +126,7 @@ export default class HelloWorldPreferences extends ExtensionPreferences {
     // Create a settings object and bind the row to our key.
     // Attach the settings object to the window to keep it alive while the window is alive.
     window._settings = this.getSettings();
-
-    const uiDir = this.metadata.dir.get_child("ui");
-    const Pages = this.loadPages(uiDir);
-    window.add(new Pages.GeneralPage(window._settings));
-    window.add(new Pages.AboutPage(this.metadata));
+    window.add(new GeneralPage(window._settings));
+    window.add(new AboutPage(this.metadata));
   }
 }
