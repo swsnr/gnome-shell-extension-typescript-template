@@ -13,6 +13,7 @@ dist: compile
 	mkdir -p ./dist/
 	mkdir -p ./build/ui
 	cp -t ./build/ui $(UIDEFS)
+	npm run dist:format
 	gnome-extensions pack --force --out-dir dist build \
 		--extra-source=../metadata.json \
 		--extra-source=ui \
