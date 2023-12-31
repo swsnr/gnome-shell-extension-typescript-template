@@ -21,8 +21,6 @@ module.exports = {
     // Build outputs
     "/build/**/*",
     "/dist/**/*",
-    // Node modules
-    "/node_modules/**/*",
     // Generated types
     "/@types/gir-generated/**/*",
   ],
