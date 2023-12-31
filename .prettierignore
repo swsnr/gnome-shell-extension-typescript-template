@@ -1,6 +1,3 @@
-# Generated files
-/@types/gir-generated/*
-
 # Build outputes
 /dist/
 /build/

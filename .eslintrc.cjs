@@ -21,7 +21,5 @@ module.exports = {
     // Build outputs
     "/build/**/*",
     "/dist/**/*",
-    // Generated types
-    "/@types/gir-generated/**/*",
   ],
 };
