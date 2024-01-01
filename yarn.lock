@@ -316,6 +316,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@girs/gjs@npm:^3.2.7":
+  version: 3.2.7
+  resolution: "@girs/gjs@npm:3.2.7"
+  dependencies:
+    "@girs/glib-2.0": "npm:^2.78.0-3.2.7"
+    "@girs/gobject-2.0": "npm:^2.78.0-3.2.7"
+  checksum: 577e56b8bc7a816f160de3bf4eb1c74b42c7d7e6d16751369673f48aca7471e1dec46cf9742093e382622290148c83970f1f03487e974078f5130c243445d726
+  languageName: node
+  linkType: hard
+
 "@girs/gl-1.0@npm:^1.0.0-3.2.6":
   version: 1.0.0-3.2.6
   resolution: "@girs/gl-1.0@npm:1.0.0-3.2.6"
@@ -333,6 +343,16 @@ __metadata:
     "@girs/gjs": "npm:^3.2.6"
     "@girs/gobject-2.0": "npm:^2.78.0-3.2.6"
   checksum: 10df363848c17d33f9555787ff2d66754f047dd78bf680901c2ba35eec09307049c38be075fcfcaa251ec5d73a4471441dd5554c7997b96572a17891fda6c0a0
+  languageName: node
+  linkType: hard
+
+"@girs/glib-2.0@npm:^2.78.0-3.2.7":
+  version: 2.78.0-3.2.7
+  resolution: "@girs/glib-2.0@npm:2.78.0-3.2.7"
+  dependencies:
+    "@girs/gjs": "npm:^3.2.7"
+    "@girs/gobject-2.0": "npm:^2.78.0-3.2.7"
+  checksum: c8031e4f4b99c1c6288a5d6b44597a4ff844c32a3cec5e2fe4312527cadaf9719f087167113d40916da34b0dcceacb9603e0efe60ce19845a7df1f2173ec086f
   languageName: node
   linkType: hard
 
@@ -434,6 +454,16 @@ __metadata:
     "@girs/gjs": "npm:^3.2.6"
     "@girs/glib-2.0": "npm:^2.78.0-3.2.6"
   checksum: de0a9b3fe60c8c72cdd332bb78fd80443cd0a983ad4d061fc5cd3521341e89d56148f8956e46301b55f1add5d58dd3b4e6ca489b7dfaf29ad783cb6ebfb197b3
+  languageName: node
+  linkType: hard
+
+"@girs/gobject-2.0@npm:^2.78.0-3.2.7":
+  version: 2.78.0-3.2.7
+  resolution: "@girs/gobject-2.0@npm:2.78.0-3.2.7"
+  dependencies:
+    "@girs/gjs": "npm:^3.2.7"
+    "@girs/glib-2.0": "npm:^2.78.0-3.2.7"
+  checksum: 7644fc7a84db6dfaf8f646e8140e9d1a213da9b52d1c13f4d0494ffa1d3e3df75911890b1d5c556ea4bf01d90fff3f5305e6d3bb9fa52cc92835a53c87870b57
   languageName: node
   linkType: hard
 
@@ -1797,7 +1827,7 @@ __metadata:
   dependencies:
     "@girs/adw-1": "npm:^1.4.0-3.2.6"
     "@girs/gio-2.0": "npm:^2.78.0-3.2.6"
-    "@girs/gjs": "npm:^3.2.6"
+    "@girs/gjs": "npm:^3.2.7"
     "@girs/glib-2.0": "npm:^2.78.0-3.2.6"
     "@girs/gnome-shell": "npm:^45.0.0-beta6"
     "@girs/gtk-4.0": "npm:^4.12.3-3.2.6"
