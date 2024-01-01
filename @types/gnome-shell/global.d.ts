@@ -17,11 +17,13 @@
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU General Public License for more details.
 
+// TODO: Replace with global import once https://github.com/gjsify/gnome-shell/pull/13 makes it into a release
 interface String {
   // GNOME Shell pollutes the String prototype with its own format function
   format(...args: unknown[]): string;
 }
 
+// TODO: Remove once https://github.com/gjsify/ts-for-gir/pull/142 makes it into @girs/gjs
 interface ImportMeta {
   /** GNOME Shell/GJS add the imported URL here */
   readonly url: string;
