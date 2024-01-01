@@ -23,10 +23,9 @@ import Gio from "gi://Gio";
 import Gtk from "gi://Gtk";
 import Adw from "gi://Adw";
 
-import {
-  ExtensionMetadata,
-  ExtensionPreferences,
-} from "resource:///org/gnome/Shell/Extensions/js/extensions/prefs.js";
+import { ExtensionPreferences } from "resource:///org/gnome/Shell/Extensions/js/extensions/prefs.js";
+
+import type { ExtensionMetadata } from "@girs/gnome-shell/extensions/extension";
 
 const LICENSE = `Copyright Sebastian Wiesner <sebastian@swsnr.de>
 
@@ -110,8 +109,13 @@ const AboutPage = GObject.registerClass(
       const children = this as unknown as AboutPageChildren;
       children._extensionName.set_text(metadata.name);
       children._extensionDescription.set_text(metadata.description);
-      children._linkGithub.set_uri(metadata.url);
-      children._linkIssues.set_uri(`${metadata.url}/issues`);
+      if (metadata.url) {
+        children._linkGithub.set_uri(metadata.url);
+        children._linkIssues.set_uri(`${metadata.url}/issues`);
+      } else {
+        children._linkGithub.visible = false;
+        children._linkIssues.visible = false;
+      }
       children._extensionLicense.buffer.set_text(LICENSE, -1);
     }
   },
