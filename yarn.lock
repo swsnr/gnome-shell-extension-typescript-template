@@ -296,13 +296,13 @@ __metadata:
   linkType: hard
 
 "@girs/gio-2.0@npm:^2.78.0-3.2.6":
-  version: 2.78.0-3.2.6
-  resolution: "@girs/gio-2.0@npm:2.78.0-3.2.6"
+  version: 2.78.0-3.2.7
+  resolution: "@girs/gio-2.0@npm:2.78.0-3.2.7"
   dependencies:
-    "@girs/gjs": "npm:^3.2.6"
-    "@girs/glib-2.0": "npm:^2.78.0-3.2.6"
-    "@girs/gobject-2.0": "npm:^2.78.0-3.2.6"
-  checksum: d9d389daab5d630bfd1249f1459196503f11110b66565f0a2d0a8787561736b28d2ba5161dc435d12153e87afd18d890a562adbe19ab19da17ec5cb862343e39
+    "@girs/gjs": "npm:^3.2.7"
+    "@girs/glib-2.0": "npm:^2.78.0-3.2.7"
+    "@girs/gobject-2.0": "npm:^2.78.0-3.2.7"
+  checksum: c9914ca80711955becd5b2de59858ba6649431f04c00839e2c74c016bed669c9468c25edb1c3f1feaf37ccb6ef5b125f57400a0bda2e0bd6b48775c1ce6fd00a
   languageName: node
   linkType: hard
 
