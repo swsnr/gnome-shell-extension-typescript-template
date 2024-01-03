@@ -12,8 +12,6 @@
   "include": [
     // Ambient types
     "@types/gnome-shell/ambient.d.ts",
-    // Extra GNOME Shell globals
-    "@types/gnome-shell/global.d.ts",
     // Our sources
     "src/**/*.ts"
   ],
