@@ -7,13 +7,13 @@
     "moduleResolution": "NodeNext",
     "lib": ["ES2022"],
     "removeComments": false,
-    "skipLibCheck": true
+    "skipLibCheck": true,
   },
   "include": [
     // Ambient types
     "@types/gnome-shell/ambient.d.ts",
     // Our sources
-    "src/**/*.ts"
+    "src/**/*.ts",
   ],
-  "exclude": [".eslintrc.cjs"]
+  "exclude": [".eslintrc.cjs"],
 }
