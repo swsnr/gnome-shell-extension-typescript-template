@@ -2,9 +2,10 @@
 /dist/
 /build/
 
-# Node configuration and modules
+# Package things
 /package.json
-/.pnp.*
+/node_modules/
+/pnpm-lock.yaml
 
 # Files I prefer not to be formatted
 *.md

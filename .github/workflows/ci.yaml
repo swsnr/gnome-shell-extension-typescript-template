@@ -7,11 +7,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v3
       - uses: actions/setup-node@v4
         with:
           node-version: latest
-      - run: corepack enable
-      - run: yarn install
+          cache: "pnpm"
+      - run: pnpm install
       - run: make check
       - run: make compile
 
@@ -19,15 +20,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v3
       - uses: actions/setup-node@v4
         with:
           node-version: latest
+          cache: "pnpm"
       - name: Install gnome-shell and strip-nondeterminism
         run: |
           sudo apt-get update -qq
           sudo apt-get install --no-install-recommends -qq -y gnome-shell strip-nondeterminism
-      - run: corepack enable
-      - run: yarn install
+      - run: pnpm install
       - run: make check-types
       - run: make dist-repro
       - run: b2sum *.zip > B2SUMS.txt
