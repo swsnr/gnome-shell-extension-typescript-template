@@ -6,20 +6,20 @@ settings:
 
 devDependencies:
   '@girs/gjs':
-    specifier: ^3.2.7
-    version: 3.2.7
+    specifier: ^3.2.9
+    version: 3.2.9
   '@girs/gnome-shell':
     specifier: ^45.0.0-beta9
     version: 45.0.0-beta9
   '@tsconfig/strictest':
-    specifier: ^2.0.2
-    version: 2.0.2
+    specifier: ^2.0.4
+    version: 2.0.4
   '@typescript-eslint/eslint-plugin':
     specifier: ^7.1.0
-    version: 7.3.1(@typescript-eslint/parser@7.3.1)(eslint@8.57.0)(typescript@5.3.3)
+    version: 7.3.1(@typescript-eslint/parser@7.3.1)(eslint@8.57.0)(typescript@5.4.3)
   '@typescript-eslint/parser':
     specifier: ^7.1.0
-    version: 7.3.1(eslint@8.57.0)(typescript@5.3.3)
+    version: 7.3.1(eslint@8.57.0)(typescript@5.4.3)
   eslint:
     specifier: ^8.57.0
     version: 8.57.0
@@ -33,8 +33,8 @@ devDependencies:
     specifier: ^3.2.5
     version: 3.2.5
   typescript:
-    specifier: ^5.3.3
-    version: 5.3.3
+    specifier: ^5.4.3
+    version: 5.4.3
 
 packages:
 
@@ -84,9 +84,9 @@ packages:
     resolution: {integrity: sha512-KRdQ6sf/XvuAxu6+1fXR8gslOMsPrM/01Qtxz8eJt6B/XJr7iK8C22WBJMcG00LD5svoRsaObD13Bd3wvV4ddw==}
     dependencies:
       '@girs/gio-2.0': 2.78.0-3.2.7
-      '@girs/gjs': 3.2.7
-      '@girs/glib-2.0': 2.78.0-3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/gjs': 3.2.9
+      '@girs/glib-2.0': 2.78.0-3.2.9
+      '@girs/gobject-2.0': 2.78.0-3.2.9
     dev: true
 
   /@girs/adw-1@1.4.2-3.2.7:
@@ -97,10 +97,10 @@ packages:
       '@girs/gdk-4.0': 4.0.0-3.2.7
       '@girs/gdkpixbuf-2.0': 2.0.0-3.2.7
       '@girs/gio-2.0': 2.78.0-3.2.7
-      '@girs/gjs': 3.2.7
-      '@girs/glib-2.0': 2.78.0-3.2.7
+      '@girs/gjs': 3.2.9
+      '@girs/glib-2.0': 2.78.0-3.2.9
       '@girs/gmodule-2.0': 2.0.0-3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/gobject-2.0': 2.78.0-3.2.9
       '@girs/graphene-1.0': 1.0.0-3.2.7
       '@girs/gsk-4.0': 4.0.0-3.2.7
       '@girs/gtk-4.0': 4.12.4-3.2.7
@@ -112,17 +112,17 @@ packages:
   /@girs/atk-1.0@2.50.0-3.2.7:
     resolution: {integrity: sha512-4HBiLdINigopQksxhZCToRHPh2oUjL32ogZ/JzHqrxB+SMF3wSNS2nuyRI/RRhx0wDIrq+8H9PgQ1gzsbhxdWg==}
     dependencies:
-      '@girs/gjs': 3.2.7
-      '@girs/glib-2.0': 2.78.0-3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/gjs': 3.2.9
+      '@girs/glib-2.0': 2.78.0-3.2.9
+      '@girs/gobject-2.0': 2.78.0-3.2.9
     dev: true
 
   /@girs/cairo-1.0@1.0.0-3.2.7:
     resolution: {integrity: sha512-WeAyTY8tUoVe8W1IDbxOYDczWyUotg/7sjzWPv5TXQJJAe3vZ6TfkYPSIlnQHkQ43XfWhSa0JA2s5Oitttdu0g==}
     dependencies:
-      '@girs/gjs': 3.2.7
-      '@girs/glib-2.0': 2.78.0-3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/gjs': 3.2.9
+      '@girs/glib-2.0': 2.78.0-3.2.9
+      '@girs/gobject-2.0': 2.78.0-3.2.9
     dev: true
 
   /@girs/cally-13@13.0.0-3.2.7:
@@ -135,10 +135,10 @@ packages:
       '@girs/coglpango-13': 13.0.0-3.2.7
       '@girs/freetype2-2.0': 2.0.0-3.2.7
       '@girs/gio-2.0': 2.78.0-3.2.7
-      '@girs/gjs': 3.2.7
+      '@girs/gjs': 3.2.9
       '@girs/gl-1.0': 1.0.0-3.2.7
-      '@girs/glib-2.0': 2.78.0-3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/glib-2.0': 2.78.0-3.2.9
+      '@girs/gobject-2.0': 2.78.0-3.2.9
       '@girs/graphene-1.0': 1.0.0-3.2.7
       '@girs/harfbuzz-0.0': 8.2.1-3.2.7
       '@girs/json-1.0': 1.7.1-3.2.7
@@ -156,10 +156,10 @@ packages:
       '@girs/coglpango-13': 13.0.0-3.2.7
       '@girs/freetype2-2.0': 2.0.0-3.2.7
       '@girs/gio-2.0': 2.78.0-3.2.7
-      '@girs/gjs': 3.2.7
+      '@girs/gjs': 3.2.9
       '@girs/gl-1.0': 1.0.0-3.2.7
-      '@girs/glib-2.0': 2.78.0-3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/glib-2.0': 2.78.0-3.2.9
+      '@girs/gobject-2.0': 2.78.0-3.2.9
       '@girs/graphene-1.0': 1.0.0-3.2.7
       '@girs/harfbuzz-0.0': 8.2.1-3.2.7
       '@girs/json-1.0': 1.7.1-3.2.7
@@ -172,20 +172,20 @@ packages:
     resolution: {integrity: sha512-oVIqRXYwf0tER8n/Sq0SyRzZm5svCN8/ZDZig33+j3YpW2T2S4zzC2Px2ZlYVExolawh9P6NXUWnRhnPIGyp+Q==}
     dependencies:
       '@girs/cairo-1.0': 1.0.0-3.2.7
-      '@girs/gjs': 3.2.7
+      '@girs/gjs': 3.2.9
       '@girs/gl-1.0': 1.0.0-3.2.7
-      '@girs/glib-2.0': 2.78.0-3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/glib-2.0': 2.78.0-3.2.9
+      '@girs/gobject-2.0': 2.78.0-3.2.9
       '@girs/graphene-1.0': 1.0.0-3.2.7
     dev: true
 
   /@girs/cogl-2.0@2.0.0-3.2.7:
     resolution: {integrity: sha512-YyAcGlkvsfUIpns/NfEw1VDWh7WUxysoeHO36Rn4LZCUK2gpq7VabwQIGNRemVyYG/l4x7SaEoIr9pFRuyHHRQ==}
     dependencies:
-      '@girs/gjs': 3.2.7
+      '@girs/gjs': 3.2.9
       '@girs/gl-1.0': 1.0.0-3.2.7
-      '@girs/glib-2.0': 2.78.0-3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/glib-2.0': 2.78.0-3.2.9
+      '@girs/gobject-2.0': 2.78.0-3.2.9
     dev: true
 
   /@girs/coglpango-13@13.0.0-3.2.7:
@@ -195,10 +195,10 @@ packages:
       '@girs/cogl-13': 13.0.0-3.2.7
       '@girs/freetype2-2.0': 2.0.0-3.2.7
       '@girs/gio-2.0': 2.78.0-3.2.7
-      '@girs/gjs': 3.2.7
+      '@girs/gjs': 3.2.9
       '@girs/gl-1.0': 1.0.0-3.2.7
-      '@girs/glib-2.0': 2.78.0-3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/glib-2.0': 2.78.0-3.2.9
+      '@girs/gobject-2.0': 2.78.0-3.2.9
       '@girs/graphene-1.0': 1.0.0-3.2.7
       '@girs/harfbuzz-0.0': 8.2.1-3.2.7
       '@girs/pango-1.0': 1.51.0-3.2.7
@@ -208,17 +208,17 @@ packages:
   /@girs/freetype2-2.0@2.0.0-3.2.7:
     resolution: {integrity: sha512-oapcm7uCVWyL9N7VHuBOxbCWTa9QoF1EX6DFAwpGK4gwVrkjedZ4kZuxtza1gsZrkmYlWNK66H7YShFHgUWdPw==}
     dependencies:
-      '@girs/gjs': 3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/gjs': 3.2.9
+      '@girs/gobject-2.0': 2.78.0-3.2.9
     dev: true
 
   /@girs/gck-2@4.1.0-3.2.7:
     resolution: {integrity: sha512-6eOLKMxM3ZCWLDwXdT9a6THQZfCPvIXcsvtQDoYlef9Ud+8owU/JhyXuQWysGqbbCv01mbvLe58uQ+KChRNkcg==}
     dependencies:
       '@girs/gio-2.0': 2.78.0-3.2.7
-      '@girs/gjs': 3.2.7
-      '@girs/glib-2.0': 2.78.0-3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/gjs': 3.2.9
+      '@girs/glib-2.0': 2.78.0-3.2.9
+      '@girs/gobject-2.0': 2.78.0-3.2.9
     dev: true
 
   /@girs/gcr-4@4.1.0-3.2.7:
@@ -226,16 +226,16 @@ packages:
     dependencies:
       '@girs/gck-2': 4.1.0-3.2.7
       '@girs/gio-2.0': 2.78.0-3.2.7
-      '@girs/gjs': 3.2.7
-      '@girs/glib-2.0': 2.78.0-3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/gjs': 3.2.9
+      '@girs/glib-2.0': 2.78.0-3.2.9
+      '@girs/gobject-2.0': 2.78.0-3.2.9
     dev: true
 
   /@girs/gdesktopenums-3.0@3.0.0-3.2.7:
     resolution: {integrity: sha512-4MC7jc7CM9pyylzTcoxjWuDJt9Q4FQ2h5WospM2yyrE2GjdNESw5HRdT98Nt3vly2W5akPDudNGSqb3YCqhcPg==}
     dependencies:
-      '@girs/gjs': 3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/gjs': 3.2.9
+      '@girs/gobject-2.0': 2.78.0-3.2.9
     dev: true
 
   /@girs/gdk-4.0@4.0.0-3.2.7:
@@ -245,10 +245,10 @@ packages:
       '@girs/freetype2-2.0': 2.0.0-3.2.7
       '@girs/gdkpixbuf-2.0': 2.0.0-3.2.7
       '@girs/gio-2.0': 2.78.0-3.2.7
-      '@girs/gjs': 3.2.7
-      '@girs/glib-2.0': 2.78.0-3.2.7
+      '@girs/gjs': 3.2.9
+      '@girs/glib-2.0': 2.78.0-3.2.9
       '@girs/gmodule-2.0': 2.0.0-3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/gobject-2.0': 2.78.0-3.2.9
       '@girs/harfbuzz-0.0': 8.2.1-3.2.7
       '@girs/pango-1.0': 1.51.0-3.2.7
       '@girs/pangocairo-1.0': 1.0.0-3.2.7
@@ -258,56 +258,56 @@ packages:
     resolution: {integrity: sha512-/POHLvRlJ6QYO8Wkrj2PDQT2lYh1vJFOHcfWd/yhtr7P3WWKGqOEG5NJAg81bMG8UIZOrc00HALXfCgbAalKGg==}
     dependencies:
       '@girs/gio-2.0': 2.78.0-3.2.7
-      '@girs/gjs': 3.2.7
-      '@girs/glib-2.0': 2.78.0-3.2.7
+      '@girs/gjs': 3.2.9
+      '@girs/glib-2.0': 2.78.0-3.2.9
       '@girs/gmodule-2.0': 2.0.0-3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/gobject-2.0': 2.78.0-3.2.9
     dev: true
 
   /@girs/gdm-1.0@1.0.0-3.2.7:
     resolution: {integrity: sha512-U05ZfhCxfiUSj48z28g/wokHKB/+BoPfSSIUdmh3OjcX1ssw9hbr+W/C2aPK6TC/iQQT/XQbntbTwkIxqfLPsw==}
     dependencies:
       '@girs/gio-2.0': 2.78.0-3.2.7
-      '@girs/gjs': 3.2.7
-      '@girs/glib-2.0': 2.78.0-3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/gjs': 3.2.9
+      '@girs/glib-2.0': 2.78.0-3.2.9
+      '@girs/gobject-2.0': 2.78.0-3.2.9
     dev: true
 
   /@girs/gio-2.0@2.78.0-3.2.7:
     resolution: {integrity: sha512-88GNniBwxAsXrfA+T1wNUxoQk8HivDZUVq1KF3ZsomrQyRDcwCgQLcLyC6c5ZAkg6xwnHZmTIWoYgITiee/lLA==}
     dependencies:
-      '@girs/gjs': 3.2.7
-      '@girs/glib-2.0': 2.78.0-3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/gjs': 3.2.9
+      '@girs/glib-2.0': 2.78.0-3.2.9
+      '@girs/gobject-2.0': 2.78.0-3.2.9
     dev: true
 
-  /@girs/gjs@3.2.7:
-    resolution: {integrity: sha512-gaZLkffVm2e5zvyyGNcDgFgyL5WaHZWUr0XBLtuKEM17/qA4udZQRif7HkW//PG8T2AQpuOfSdRj7uJrItykNw==}
+  /@girs/gjs@3.2.9:
+    resolution: {integrity: sha512-dJfCNdtt4OLRywlhKOc+h27l5KoOiDhbhkuuG/WaV/jn9KaQ1BMAyVWdBEZu6WzPJlsiWYujis0fe5ZJnrgoDA==}
     dependencies:
-      '@girs/glib-2.0': 2.78.0-3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/glib-2.0': 2.78.0-3.2.9
+      '@girs/gobject-2.0': 2.78.0-3.2.9
     dev: true
 
   /@girs/gl-1.0@1.0.0-3.2.7:
     resolution: {integrity: sha512-pYGo7+u0KCUG63am/zmwOAUosurCs/BxwVRsOAnOKnZppkjfTqssEdAz1YyetbPK/n8sbYjsSWae/yIJmYAgRw==}
     dependencies:
-      '@girs/gjs': 3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/gjs': 3.2.9
+      '@girs/gobject-2.0': 2.78.0-3.2.9
     dev: true
 
-  /@girs/glib-2.0@2.78.0-3.2.7:
-    resolution: {integrity: sha512-h1zGUd58VnQn93Xws91E0mwio8weBWdqDn6sm5Q0xzPmhGGH8+9h/z9JGc7YKj32PnlWrPJ8r9lxeyvO57zT6A==}
+  /@girs/glib-2.0@2.78.0-3.2.9:
+    resolution: {integrity: sha512-wcbnSojav6jc4//PYsAJPwXizFlz35/F+AHyFbvutOSdNz4xzzUUZqUhhH2lmoyR8WDvkVWBcQitCmYmPNe6Xg==}
     dependencies:
-      '@girs/gjs': 3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/gjs': 3.2.9
+      '@girs/gobject-2.0': 2.78.0-3.2.9
     dev: true
 
   /@girs/gmodule-2.0@2.0.0-3.2.7:
     resolution: {integrity: sha512-7B+rAZ6grSYwSOz2p4h8hSKoK5QIuSVHEM7qGUTC6qpPiLvREcaBNGJSGgAMgxtRhyXPYVsUyLhMgUokrFUC+g==}
     dependencies:
-      '@girs/gjs': 3.2.7
-      '@girs/glib-2.0': 2.78.0-3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/gjs': 3.2.9
+      '@girs/glib-2.0': 2.78.0-3.2.9
+      '@girs/gobject-2.0': 2.78.0-3.2.9
     dev: true
 
   /@girs/gnome-shell@45.0.0-beta9:
@@ -322,12 +322,12 @@ packages:
       '@girs/gcr-4': 4.1.0-3.2.7
       '@girs/gdm-1.0': 1.0.0-3.2.7
       '@girs/gio-2.0': 2.78.0-3.2.7
-      '@girs/gjs': 3.2.7
-      '@girs/glib-2.0': 2.78.0-3.2.7
+      '@girs/gjs': 3.2.9
+      '@girs/glib-2.0': 2.78.0-3.2.9
       '@girs/gnomebg-4.0': 4.0.0-3.2.7
       '@girs/gnomebluetooth-3.0': 3.0.0-3.2.7
       '@girs/gnomedesktop-4.0': 4.0.0-3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/gobject-2.0': 2.78.0-3.2.9
       '@girs/gtk-4.0': 4.12.4-3.2.7
       '@girs/gvc-1.0': 1.0.0-3.2.7
       '@girs/meta-13': 13.0.0-3.2.7
@@ -348,11 +348,11 @@ packages:
       '@girs/gdk-4.0': 4.0.0-3.2.7
       '@girs/gdkpixbuf-2.0': 2.0.0-3.2.7
       '@girs/gio-2.0': 2.78.0-3.2.7
-      '@girs/gjs': 3.2.7
-      '@girs/glib-2.0': 2.78.0-3.2.7
+      '@girs/gjs': 3.2.9
+      '@girs/glib-2.0': 2.78.0-3.2.9
       '@girs/gmodule-2.0': 2.0.0-3.2.7
       '@girs/gnomedesktop-4.0': 4.0.0-3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/gobject-2.0': 2.78.0-3.2.9
       '@girs/harfbuzz-0.0': 8.2.1-3.2.7
       '@girs/pango-1.0': 1.51.0-3.2.7
       '@girs/pangocairo-1.0': 1.0.0-3.2.7
@@ -362,9 +362,9 @@ packages:
     resolution: {integrity: sha512-Spx/oflIgyioJWu5gZkxcHizFqA5LOI7hWUxPFSB1Pwz6H/+uIwDpMkS9CUbu2RVYV6sasrxcnxtd6XzXP2lWw==}
     dependencies:
       '@girs/gio-2.0': 2.78.0-3.2.7
-      '@girs/gjs': 3.2.7
-      '@girs/glib-2.0': 2.78.0-3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/gjs': 3.2.9
+      '@girs/glib-2.0': 2.78.0-3.2.9
+      '@girs/gobject-2.0': 2.78.0-3.2.9
     dev: true
 
   /@girs/gnomedesktop-4.0@4.0.0-3.2.7:
@@ -373,25 +373,25 @@ packages:
       '@girs/gdesktopenums-3.0': 3.0.0-3.2.7
       '@girs/gdkpixbuf-2.0': 2.0.0-3.2.7
       '@girs/gio-2.0': 2.78.0-3.2.7
-      '@girs/gjs': 3.2.7
-      '@girs/glib-2.0': 2.78.0-3.2.7
+      '@girs/gjs': 3.2.9
+      '@girs/glib-2.0': 2.78.0-3.2.9
       '@girs/gmodule-2.0': 2.0.0-3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/gobject-2.0': 2.78.0-3.2.9
     dev: true
 
-  /@girs/gobject-2.0@2.78.0-3.2.7:
-    resolution: {integrity: sha512-BSYxXv4NHZS7ANo0up8N9Dfl3FysIxqsUXmHAMmVkUNdNPfaRyiXnSBiFYzkFdkHQFDoQhM5+RsXz4R94ZLlsw==}
+  /@girs/gobject-2.0@2.78.0-3.2.9:
+    resolution: {integrity: sha512-zszoqx7/z7KseQnc7WUXz1jgs3oYskT748cMKLQ7n4pRtL6klrTzlPbM42Szs+Uk6wOKJ+o+MMdcpb8znflDBg==}
     dependencies:
-      '@girs/gjs': 3.2.7
-      '@girs/glib-2.0': 2.78.0-3.2.7
+      '@girs/gjs': 3.2.9
+      '@girs/glib-2.0': 2.78.0-3.2.9
     dev: true
 
   /@girs/graphene-1.0@1.0.0-3.2.7:
     resolution: {integrity: sha512-WVhfoZq2G7mpXSGjI65VzmCLYWIqlFJMHwsgG0nBYZig2zKdle4c4hm5SQu9HrTQWTTPpbt8BM3qPCH2rFISXg==}
     dependencies:
-      '@girs/gjs': 3.2.7
-      '@girs/glib-2.0': 2.78.0-3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/gjs': 3.2.9
+      '@girs/glib-2.0': 2.78.0-3.2.9
+      '@girs/gobject-2.0': 2.78.0-3.2.9
     dev: true
 
   /@girs/gsk-4.0@4.0.0-3.2.7:
@@ -402,10 +402,10 @@ packages:
       '@girs/gdk-4.0': 4.0.0-3.2.7
       '@girs/gdkpixbuf-2.0': 2.0.0-3.2.7
       '@girs/gio-2.0': 2.78.0-3.2.7
-      '@girs/gjs': 3.2.7
-      '@girs/glib-2.0': 2.78.0-3.2.7
+      '@girs/gjs': 3.2.9
+      '@girs/glib-2.0': 2.78.0-3.2.9
       '@girs/gmodule-2.0': 2.0.0-3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/gobject-2.0': 2.78.0-3.2.9
       '@girs/graphene-1.0': 1.0.0-3.2.7
       '@girs/harfbuzz-0.0': 8.2.1-3.2.7
       '@girs/pango-1.0': 1.51.0-3.2.7
@@ -420,10 +420,10 @@ packages:
       '@girs/gdk-4.0': 4.0.0-3.2.7
       '@girs/gdkpixbuf-2.0': 2.0.0-3.2.7
       '@girs/gio-2.0': 2.78.0-3.2.7
-      '@girs/gjs': 3.2.7
-      '@girs/glib-2.0': 2.78.0-3.2.7
+      '@girs/gjs': 3.2.9
+      '@girs/glib-2.0': 2.78.0-3.2.9
       '@girs/gmodule-2.0': 2.0.0-3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/gobject-2.0': 2.78.0-3.2.9
       '@girs/graphene-1.0': 1.0.0-3.2.7
       '@girs/gsk-4.0': 4.0.0-3.2.7
       '@girs/harfbuzz-0.0': 8.2.1-3.2.7
@@ -435,27 +435,27 @@ packages:
     resolution: {integrity: sha512-5B6YxXRzqo6JbZg4B8KtEOEsUhfEZYo9yESgf95lhWeUXpS6JjJFg/lQ85E/KFDQmKtAJ/UYglmLa8omVvH5DA==}
     dependencies:
       '@girs/gio-2.0': 2.78.0-3.2.7
-      '@girs/gjs': 3.2.7
-      '@girs/glib-2.0': 2.78.0-3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/gjs': 3.2.9
+      '@girs/glib-2.0': 2.78.0-3.2.9
+      '@girs/gobject-2.0': 2.78.0-3.2.9
     dev: true
 
   /@girs/harfbuzz-0.0@8.2.1-3.2.7:
     resolution: {integrity: sha512-2ISw/O1eW90P2jeeFuTZRBE6+z/VWCWCaYZOMTTDaF498PGljKtuexm0e5BEzVrbayU7EgSHhqxfnfpsgI2+eQ==}
     dependencies:
       '@girs/freetype2-2.0': 2.0.0-3.2.7
-      '@girs/gjs': 3.2.7
-      '@girs/glib-2.0': 2.78.0-3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/gjs': 3.2.9
+      '@girs/glib-2.0': 2.78.0-3.2.9
+      '@girs/gobject-2.0': 2.78.0-3.2.9
     dev: true
 
   /@girs/json-1.0@1.7.1-3.2.7:
     resolution: {integrity: sha512-MtYgGf3KJCdRoCs5NtxMYlznwvPLqAzjuYApbA02RR9bs/4sr6vfy4FdioZGdLC9krlFiiYoCZJaThglYbEiww==}
     dependencies:
       '@girs/gio-2.0': 2.78.0-3.2.7
-      '@girs/gjs': 3.2.7
-      '@girs/glib-2.0': 2.78.0-3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/gjs': 3.2.9
+      '@girs/glib-2.0': 2.78.0-3.2.9
+      '@girs/gobject-2.0': 2.78.0-3.2.9
     dev: true
 
   /@girs/meta-13@13.0.0-3.2.7:
@@ -469,10 +469,10 @@ packages:
       '@girs/freetype2-2.0': 2.0.0-3.2.7
       '@girs/gdesktopenums-3.0': 3.0.0-3.2.7
       '@girs/gio-2.0': 2.78.0-3.2.7
-      '@girs/gjs': 3.2.7
+      '@girs/gjs': 3.2.9
       '@girs/gl-1.0': 1.0.0-3.2.7
-      '@girs/glib-2.0': 2.78.0-3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/glib-2.0': 2.78.0-3.2.9
+      '@girs/gobject-2.0': 2.78.0-3.2.9
       '@girs/graphene-1.0': 1.0.0-3.2.7
       '@girs/harfbuzz-0.0': 8.2.1-3.2.7
       '@girs/json-1.0': 1.7.1-3.2.7
@@ -487,9 +487,9 @@ packages:
     resolution: {integrity: sha512-x6s0192AB90AbG6n26nOMS5q1uxxmeWMyStVUUmcdsd7WLW0IVLAGOaPIyB/KS4W2iBIYLOTIzUBfCT5geAsIA==}
     dependencies:
       '@girs/cairo-1.0': 1.0.0-3.2.7
-      '@girs/gjs': 3.2.7
-      '@girs/glib-2.0': 2.78.0-3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/gjs': 3.2.9
+      '@girs/glib-2.0': 2.78.0-3.2.9
+      '@girs/gobject-2.0': 2.78.0-3.2.9
       '@girs/graphene-1.0': 1.0.0-3.2.7
     dev: true
 
@@ -497,9 +497,9 @@ packages:
     resolution: {integrity: sha512-UCES5B76liszdKvHgFPRSThGHENxBCXb/QurNkJyqPRB6QvIC7NpenRX0oig3S62LbPNFCUNskGMw8Yt3pZwtg==}
     dependencies:
       '@girs/gio-2.0': 2.78.0-3.2.7
-      '@girs/gjs': 3.2.7
-      '@girs/glib-2.0': 2.78.0-3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/gjs': 3.2.9
+      '@girs/glib-2.0': 2.78.0-3.2.9
+      '@girs/gobject-2.0': 2.78.0-3.2.9
     dev: true
 
   /@girs/pango-1.0@1.51.0-3.2.7:
@@ -508,9 +508,9 @@ packages:
       '@girs/cairo-1.0': 1.0.0-3.2.7
       '@girs/freetype2-2.0': 2.0.0-3.2.7
       '@girs/gio-2.0': 2.78.0-3.2.7
-      '@girs/gjs': 3.2.7
-      '@girs/glib-2.0': 2.78.0-3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/gjs': 3.2.9
+      '@girs/glib-2.0': 2.78.0-3.2.9
+      '@girs/gobject-2.0': 2.78.0-3.2.9
       '@girs/harfbuzz-0.0': 8.2.1-3.2.7
     dev: true
 
@@ -520,9 +520,9 @@ packages:
       '@girs/cairo-1.0': 1.0.0-3.2.7
       '@girs/freetype2-2.0': 2.0.0-3.2.7
       '@girs/gio-2.0': 2.78.0-3.2.7
-      '@girs/gjs': 3.2.7
-      '@girs/glib-2.0': 2.78.0-3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/gjs': 3.2.9
+      '@girs/glib-2.0': 2.78.0-3.2.9
+      '@girs/gobject-2.0': 2.78.0-3.2.9
       '@girs/harfbuzz-0.0': 8.2.1-3.2.7
       '@girs/pango-1.0': 1.51.0-3.2.7
     dev: true
@@ -531,18 +531,18 @@ packages:
     resolution: {integrity: sha512-C01SGikKSvk6AalMyBaDc33/gvxuiuA9oQYqaf6MEQpOfe466BE5IhZl8L/6VjwVMmAGepFVcjwS5fxaRyioZQ==}
     dependencies:
       '@girs/gio-2.0': 2.78.0-3.2.7
-      '@girs/gjs': 3.2.7
-      '@girs/glib-2.0': 2.78.0-3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/gjs': 3.2.9
+      '@girs/glib-2.0': 2.78.0-3.2.9
+      '@girs/gobject-2.0': 2.78.0-3.2.9
     dev: true
 
   /@girs/polkitagent-1.0@1.0.0-3.2.7:
     resolution: {integrity: sha512-YlWtpFISpJR6qZhbL4W59vIFghiQ79EAev+QeqB4K3H9bw1tsoipbFVAqKqxyZFJTDSxSlGOpuVtcJ4EuO77HQ==}
     dependencies:
       '@girs/gio-2.0': 2.78.0-3.2.7
-      '@girs/gjs': 3.2.7
-      '@girs/glib-2.0': 2.78.0-3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/gjs': 3.2.9
+      '@girs/glib-2.0': 2.78.0-3.2.9
+      '@girs/gobject-2.0': 2.78.0-3.2.9
       '@girs/polkit-1.0': 1.0.0-3.2.7
     dev: true
 
@@ -561,11 +561,11 @@ packages:
       '@girs/gdesktopenums-3.0': 3.0.0-3.2.7
       '@girs/gdkpixbuf-2.0': 2.0.0-3.2.7
       '@girs/gio-2.0': 2.78.0-3.2.7
-      '@girs/gjs': 3.2.7
+      '@girs/gjs': 3.2.9
       '@girs/gl-1.0': 1.0.0-3.2.7
-      '@girs/glib-2.0': 2.78.0-3.2.7
+      '@girs/glib-2.0': 2.78.0-3.2.9
       '@girs/gmodule-2.0': 2.0.0-3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/gobject-2.0': 2.78.0-3.2.9
       '@girs/graphene-1.0': 1.0.0-3.2.7
       '@girs/gvc-1.0': 1.0.0-3.2.7
       '@girs/harfbuzz-0.0': 8.2.1-3.2.7
@@ -590,10 +590,10 @@ packages:
       '@girs/gdk-4.0': 4.0.0-3.2.7
       '@girs/gdkpixbuf-2.0': 2.0.0-3.2.7
       '@girs/gio-2.0': 2.78.0-3.2.7
-      '@girs/gjs': 3.2.7
-      '@girs/glib-2.0': 2.78.0-3.2.7
+      '@girs/gjs': 3.2.9
+      '@girs/glib-2.0': 2.78.0-3.2.9
       '@girs/gmodule-2.0': 2.0.0-3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/gobject-2.0': 2.78.0-3.2.9
       '@girs/graphene-1.0': 1.0.0-3.2.7
       '@girs/gsk-4.0': 4.0.0-3.2.7
       '@girs/gtk-4.0': 4.12.4-3.2.7
@@ -615,11 +615,11 @@ packages:
       '@girs/gdesktopenums-3.0': 3.0.0-3.2.7
       '@girs/gdkpixbuf-2.0': 2.0.0-3.2.7
       '@girs/gio-2.0': 2.78.0-3.2.7
-      '@girs/gjs': 3.2.7
+      '@girs/gjs': 3.2.9
       '@girs/gl-1.0': 1.0.0-3.2.7
-      '@girs/glib-2.0': 2.78.0-3.2.7
+      '@girs/glib-2.0': 2.78.0-3.2.9
       '@girs/gmodule-2.0': 2.0.0-3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/gobject-2.0': 2.78.0-3.2.9
       '@girs/graphene-1.0': 1.0.0-3.2.7
       '@girs/harfbuzz-0.0': 8.2.1-3.2.7
       '@girs/json-1.0': 1.7.1-3.2.7
@@ -635,23 +635,23 @@ packages:
     resolution: {integrity: sha512-Ss0U2Q6lQ+aLVnddfulAvBJJjwpckV92Z3ivSDZ4VeCqi0dsiInVHlmHUC58Yb/A7EuCplL97hHax4orAgvAFQ==}
     dependencies:
       '@girs/gio-2.0': 2.78.0-3.2.7
-      '@girs/gjs': 3.2.7
-      '@girs/glib-2.0': 2.78.0-3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/gjs': 3.2.9
+      '@girs/glib-2.0': 2.78.0-3.2.9
+      '@girs/gobject-2.0': 2.78.0-3.2.9
     dev: true
 
   /@girs/xfixes-4.0@4.0.0-3.2.7:
     resolution: {integrity: sha512-MpV1+qiNX/8HadIK0Rnh+18S9OBqe2lcILdjVepQGn3lZx0QITPvY1XSdu835jYnTp+/izJWZGqZ9M/ZKI7hCg==}
     dependencies:
-      '@girs/gjs': 3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/gjs': 3.2.9
+      '@girs/gobject-2.0': 2.78.0-3.2.9
     dev: true
 
   /@girs/xlib-2.0@2.0.0-3.2.7:
     resolution: {integrity: sha512-c4+y9V1BN7u0o2ijVuvT9WzEt7IvSJW/Dt4N7qQdTWfLnsQABPMnLuKQsZ6GRqPWBt+JBH0sOSR0tHBMLATC0g==}
     dependencies:
-      '@girs/gjs': 3.2.7
-      '@girs/gobject-2.0': 2.78.0-3.2.7
+      '@girs/gjs': 3.2.9
+      '@girs/gobject-2.0': 2.78.0-3.2.9
     dev: true
 
   /@humanwhocodes/config-array@0.11.14:
@@ -695,8 +695,8 @@ packages:
       fastq: 1.16.0
     dev: true
 
-  /@tsconfig/strictest@2.0.2:
-    resolution: {integrity: sha512-jt4jIsWKvUvuY6adJnQJlb/UR7DdjC8CjHI/OaSQruj2yX9/K6+KOvDt/vD6udqos/FUk5Op66CvYT7TBLYO5Q==}
+  /@tsconfig/strictest@2.0.4:
+    resolution: {integrity: sha512-/VKO/oufDOvAE48KGzZOEXFBKtR3PnGlb4cJoRtw3Ax5tYwaWnaNgyTJDviIbvjlnn82WMfTNvhegFkj5Xt2UA==}
     dev: true
 
   /@types/json-schema@7.0.15:
@@ -707,7 +707,7 @@ packages:
     resolution: {integrity: sha512-dn1l8LaMea/IjDoHNd9J52uBbInB796CDffS6VdIxvqYCPSG0V0DzHp76GpaWnlhg88uYyPbXCDIowa86ybd5A==}
     dev: true
 
-  /@typescript-eslint/eslint-plugin@7.3.1(@typescript-eslint/parser@7.3.1)(eslint@8.57.0)(typescript@5.3.3):
+  /@typescript-eslint/eslint-plugin@7.3.1(@typescript-eslint/parser@7.3.1)(eslint@8.57.0)(typescript@5.4.3):
     resolution: {integrity: sha512-STEDMVQGww5lhCuNXVSQfbfuNII5E08QWkvAw5Qwf+bj2WT+JkG1uc+5/vXA3AOYMDHVOSpL+9rcbEUiHIm2dw==}
     engines: {node: ^18.18.0 || >=20.0.0}
     peerDependencies:
@@ -719,10 +719,10 @@ packages:
         optional: true
     dependencies:
       '@eslint-community/regexpp': 4.10.0
-      '@typescript-eslint/parser': 7.3.1(eslint@8.57.0)(typescript@5.3.3)
+      '@typescript-eslint/parser': 7.3.1(eslint@8.57.0)(typescript@5.4.3)
       '@typescript-eslint/scope-manager': 7.3.1
-      '@typescript-eslint/type-utils': 7.3.1(eslint@8.57.0)(typescript@5.3.3)
-      '@typescript-eslint/utils': 7.3.1(eslint@8.57.0)(typescript@5.3.3)
+      '@typescript-eslint/type-utils': 7.3.1(eslint@8.57.0)(typescript@5.4.3)
+      '@typescript-eslint/utils': 7.3.1(eslint@8.57.0)(typescript@5.4.3)
       '@typescript-eslint/visitor-keys': 7.3.1
       debug: 4.3.4
       eslint: 8.57.0
@@ -730,13 +730,13 @@ packages:
       ignore: 5.3.0
       natural-compare: 1.4.0
       semver: 7.5.4
-      ts-api-utils: 1.0.3(typescript@5.3.3)
-      typescript: 5.3.3
+      ts-api-utils: 1.0.3(typescript@5.4.3)
+      typescript: 5.4.3
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /@typescript-eslint/parser@7.3.1(eslint@8.57.0)(typescript@5.3.3):
+  /@typescript-eslint/parser@7.3.1(eslint@8.57.0)(typescript@5.4.3):
     resolution: {integrity: sha512-Rq49+pq7viTRCH48XAbTA+wdLRrB/3sRq4Lpk0oGDm0VmnjBrAOVXH/Laalmwsv2VpekiEfVFwJYVk6/e8uvQw==}
     engines: {node: ^18.18.0 || >=20.0.0}
     peerDependencies:
@@ -748,11 +748,11 @@ packages:
     dependencies:
       '@typescript-eslint/scope-manager': 7.3.1
       '@typescript-eslint/types': 7.3.1
-      '@typescript-eslint/typescript-estree': 7.3.1(typescript@5.3.3)
+      '@typescript-eslint/typescript-estree': 7.3.1(typescript@5.4.3)
       '@typescript-eslint/visitor-keys': 7.3.1
       debug: 4.3.4
       eslint: 8.57.0
-      typescript: 5.3.3
+      typescript: 5.4.3
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -765,7 +765,7 @@ packages:
       '@typescript-eslint/visitor-keys': 7.3.1
     dev: true
 
-  /@typescript-eslint/type-utils@7.3.1(eslint@8.57.0)(typescript@5.3.3):
+  /@typescript-eslint/type-utils@7.3.1(eslint@8.57.0)(typescript@5.4.3):
     resolution: {integrity: sha512-iFhaysxFsMDQlzJn+vr3OrxN8NmdQkHks4WaqD4QBnt5hsq234wcYdyQ9uquzJJIDAj5W4wQne3yEsYA6OmXGw==}
     engines: {node: ^18.18.0 || >=20.0.0}
     peerDependencies:
@@ -775,12 +775,12 @@ packages:
       typescript:
         optional: true
     dependencies:
-      '@typescript-eslint/typescript-estree': 7.3.1(typescript@5.3.3)
-      '@typescript-eslint/utils': 7.3.1(eslint@8.57.0)(typescript@5.3.3)
+      '@typescript-eslint/typescript-estree': 7.3.1(typescript@5.4.3)
+      '@typescript-eslint/utils': 7.3.1(eslint@8.57.0)(typescript@5.4.3)
       debug: 4.3.4
       eslint: 8.57.0
-      ts-api-utils: 1.0.3(typescript@5.3.3)
-      typescript: 5.3.3
+      ts-api-utils: 1.0.3(typescript@5.4.3)
+      typescript: 5.4.3
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -790,7 +790,7 @@ packages:
     engines: {node: ^18.18.0 || >=20.0.0}
     dev: true
 
-  /@typescript-eslint/typescript-estree@7.3.1(typescript@5.3.3):
+  /@typescript-eslint/typescript-estree@7.3.1(typescript@5.4.3):
     resolution: {integrity: sha512-tLpuqM46LVkduWP7JO7yVoWshpJuJzxDOPYIVWUUZbW+4dBpgGeUdl/fQkhuV0A8eGnphYw3pp8d2EnvPOfxmQ==}
     engines: {node: ^18.18.0 || >=20.0.0}
     peerDependencies:
@@ -806,13 +806,13 @@ packages:
       is-glob: 4.0.3
       minimatch: 9.0.3
       semver: 7.5.4
-      ts-api-utils: 1.0.3(typescript@5.3.3)
-      typescript: 5.3.3
+      ts-api-utils: 1.0.3(typescript@5.4.3)
+      typescript: 5.4.3
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /@typescript-eslint/utils@7.3.1(eslint@8.57.0)(typescript@5.3.3):
+  /@typescript-eslint/utils@7.3.1(eslint@8.57.0)(typescript@5.4.3):
     resolution: {integrity: sha512-jIERm/6bYQ9HkynYlNZvXpzmXWZGhMbrOvq3jJzOSOlKXsVjrrolzWBjDW6/TvT5Q3WqaN4EkmcfdQwi9tDjBQ==}
     engines: {node: ^18.18.0 || >=20.0.0}
     peerDependencies:
@@ -823,7 +823,7 @@ packages:
       '@types/semver': 7.5.6
       '@typescript-eslint/scope-manager': 7.3.1
       '@typescript-eslint/types': 7.3.1
-      '@typescript-eslint/typescript-estree': 7.3.1(typescript@5.3.3)
+      '@typescript-eslint/typescript-estree': 7.3.1(typescript@5.4.3)
       eslint: 8.57.0
       semver: 7.5.4
     transitivePeerDependencies:
@@ -1517,13 +1517,13 @@ packages:
       is-number: 7.0.0
     dev: true
 
-  /ts-api-utils@1.0.3(typescript@5.3.3):
+  /ts-api-utils@1.0.3(typescript@5.4.3):
     resolution: {integrity: sha512-wNMeqtMz5NtwpT/UZGY5alT+VoKdSsOOP/kqHFcUW1P/VRhH2wJ48+DN2WwUliNbQ976ETwDL0Ifd2VVvgonvg==}
     engines: {node: '>=16.13.0'}
     peerDependencies:
       typescript: '>=4.2.0'
     dependencies:
-      typescript: 5.3.3
+      typescript: 5.4.3
     dev: true
 
   /type-check@0.4.0:
@@ -1538,8 +1538,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /typescript@5.3.3:
-    resolution: {integrity: sha512-pXWcraxM0uxAS+tN0AG/BF2TyqmHO014Z070UsJ+pFvYuRSq8KH8DmWpnbXe0pEPDHXZV3FcAbJkijJ5oNEnWw==}
+  /typescript@5.4.3:
+    resolution: {integrity: sha512-KrPd3PKaCLr78MalgiwJnA25Nm8HAmdwN3mYUYZgG/wizIo9EainNVQI9/yDavtVFRN2h3k8uf3GLHuhDMgEHg==}
     engines: {node: '>=14.17'}
     hasBin: true
     dev: true

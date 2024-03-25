@@ -10,16 +10,16 @@
     "format": "prettier ."
   },
   "devDependencies": {
-    "@girs/gjs": "^3.2.7",
+    "@girs/gjs": "^3.2.9",
     "@girs/gnome-shell": "^45.0.0-beta9",
-    "@tsconfig/strictest": "^2.0.2",
+    "@tsconfig/strictest": "^2.0.4",
     "@typescript-eslint/eslint-plugin": "^7.1.0",
     "@typescript-eslint/parser": "^7.1.0",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-promise": "^6.1.1",
     "prettier": "^3.2.5",
-    "typescript": "^5.3.3"
+    "typescript": "^5.4.3"
   },
   "packageManager": "pnpm@8.15.5"
 }
