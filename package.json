@@ -13,7 +13,7 @@
     "@girs/gjs": "^3.2.9",
     "@girs/gnome-shell": "^45.0.0-beta9",
     "@tsconfig/strictest": "^2.0.4",
-    "@typescript-eslint/eslint-plugin": "^7.1.0",
+    "@typescript-eslint/eslint-plugin": "^7.4.0",
     "@typescript-eslint/parser": "^7.1.0",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
