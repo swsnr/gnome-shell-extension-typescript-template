@@ -10,8 +10,8 @@
     "format": "prettier ."
   },
   "devDependencies": {
-    "@girs/gjs": "^3.2.9",
-    "@girs/gnome-shell": "^45.0.0-beta9",
+    "@girs/gjs": "^3.3.0",
+    "@girs/gnome-shell": "^46.0.0-beta6",
     "@tsconfig/strictest": "^2.0.5",
     "@typescript-eslint/eslint-plugin": "^7.4.0",
     "@typescript-eslint/parser": "^7.4.0",
