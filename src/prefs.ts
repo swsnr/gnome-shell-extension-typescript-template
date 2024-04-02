@@ -64,11 +64,11 @@ interface GeneralPageChildren {
 
 const GeneralPage = GObject.registerClass(
   {
-    GTypeName: "GeneralPage",
+    GTypeName: "TypescriptTemplateGeneralPage",
     Template: getTemplate("GeneralPage"),
     InternalChildren: ["sayHello"],
   },
-  class GeneralPage extends Adw.PreferencesPage {
+  class TypescriptTemplateGeneralPage extends Adw.PreferencesPage {
     constructor(settings: Gio.Settings) {
       super();
 
@@ -93,7 +93,7 @@ interface AboutPageChildren {
 
 const AboutPage = GObject.registerClass(
   {
-    GTypeName: "AboutPage",
+    GTypeName: "TypescriptTemplateAboutPage",
     Template: getTemplate("AboutPage"),
     InternalChildren: [
       "extensionName",
@@ -103,7 +103,7 @@ const AboutPage = GObject.registerClass(
       "extensionLicense",
     ],
   },
-  class AboutPage extends Adw.PreferencesPage {
+  class TypescriptTemplateAboutPage extends Adw.PreferencesPage {
     constructor(metadata: ExtensionMetadata) {
       super();
       const children = this as unknown as AboutPageChildren;
