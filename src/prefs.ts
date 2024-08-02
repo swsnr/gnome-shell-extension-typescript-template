@@ -46,17 +46,12 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.`;
 
-const getTemplate = (name: string): string => {
-  const uri = GLib.uri_resolve_relative(
+const getTemplate = (name: string): string =>
+  GLib.uri_resolve_relative(
     import.meta.url,
     `ui/${name}.ui`,
     GLib.UriFlags.NONE,
   );
-  if (uri === null) {
-    throw new Error(`Failed to resolve URI for template ${name}!`);
-  }
-  return uri;
-};
 
 interface GeneralPageChildren {
   _sayHello: Adw.SwitchRow;
