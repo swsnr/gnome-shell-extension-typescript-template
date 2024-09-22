@@ -121,11 +121,12 @@ export default class HelloWorldPreferences extends ExtensionPreferences {
     window: Adw.PreferencesWindow & {
       _settings: Gio.Settings;
     },
-  ): void {
+  ): Promise<void> {
     // Create a settings object and bind the row to our key.
     // Attach the settings object to the window to keep it alive while the window is alive.
     window._settings = this.getSettings();
     window.add(new GeneralPage(window._settings));
     window.add(new AboutPage(this.metadata));
+    return Promise.resolve();
   }
 }
