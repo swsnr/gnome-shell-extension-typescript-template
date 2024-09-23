@@ -44,7 +44,8 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.`;
 
-interface AboutPageChildren {
+// eslint-disable-next-line @typescript-eslint/no-unsafe-declaration-merging
+interface TypescriptTemplateAboutPage {
   _extensionName: Gtk.Label;
   _extensionDescription: Gtk.Label;
   _linkGithub: Gtk.LinkButton;
@@ -52,20 +53,20 @@ interface AboutPageChildren {
   _extensionLicense: Gtk.TextView;
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unsafe-declaration-merging
 class TypescriptTemplateAboutPage extends Adw.PreferencesPage {
   constructor(metadata: ExtensionMetadata) {
     super();
-    const children = this as unknown as AboutPageChildren;
-    children._extensionName.set_text(metadata.name);
-    children._extensionDescription.set_text(metadata.description);
+    this._extensionName.set_text(metadata.name);
+    this._extensionDescription.set_text(metadata.description);
     if (metadata.url) {
-      children._linkGithub.set_uri(metadata.url);
-      children._linkIssues.set_uri(`${metadata.url}/issues`);
+      this._linkGithub.set_uri(metadata.url);
+      this._linkIssues.set_uri(`${metadata.url}/issues`);
     } else {
-      children._linkGithub.visible = false;
-      children._linkIssues.visible = false;
+      this._linkGithub.visible = false;
+      this._linkIssues.visible = false;
     }
-    children._extensionLicense.buffer.set_text(LICENSE, -1);
+    this._extensionLicense.buffer.set_text(LICENSE, -1);
   }
 }
 
