@@ -17,25 +17,36 @@
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU General Public License for more details.
 
+import GObject from "gi://GObject";
 import Gio from "gi://Gio";
 import Adw from "gi://Adw";
 
-import { ExtensionPreferences } from "resource:///org/gnome/Shell/Extensions/js/extensions/prefs.js";
+import { getTemplate } from "./template.js";
 
-import AboutPage from "./lib/prefs/about_page.js";
-import GeneralPage from "./lib/prefs/general_page.js";
+// eslint-disable-next-line @typescript-eslint/no-unsafe-declaration-merging
+interface TypescriptTemplateGeneralPage {
+  _sayHello: Adw.SwitchRow;
+}
 
-export default class HelloWorldPreferences extends ExtensionPreferences {
-  override fillPreferencesWindow(
-    window: Adw.PreferencesWindow & {
-      _settings: Gio.Settings;
-    },
-  ): Promise<void> {
-    // Create a settings object and bind the row to our key.
-    // Attach the settings object to the window to keep it alive while the window is alive.
-    window._settings = this.getSettings();
-    window.add(new GeneralPage(window._settings));
-    window.add(new AboutPage(this.metadata));
-    return Promise.resolve();
+// eslint-disable-next-line @typescript-eslint/no-unsafe-declaration-merging
+class TypescriptTemplateGeneralPage extends Adw.PreferencesPage {
+  constructor(settings: Gio.Settings) {
+    super();
+
+    settings.bind(
+      "say-hello",
+      this._sayHello,
+      "active",
+      Gio.SettingsBindFlags.DEFAULT,
+    );
   }
 }
+
+export default GObject.registerClass(
+  {
+    GTypeName: "TypescriptTemplateGeneralPage",
+    Template: getTemplate("GeneralPage"),
+    InternalChildren: ["sayHello"],
+  },
+  TypescriptTemplateGeneralPage,
+);

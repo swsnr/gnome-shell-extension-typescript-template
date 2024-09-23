@@ -17,25 +17,11 @@
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU General Public License for more details.
 
-import Gio from "gi://Gio";
-import Adw from "gi://Adw";
+import GLib from "gi://GLib";
 
-import { ExtensionPreferences } from "resource:///org/gnome/Shell/Extensions/js/extensions/prefs.js";
-
-import AboutPage from "./lib/prefs/about_page.js";
-import GeneralPage from "./lib/prefs/general_page.js";
-
-export default class HelloWorldPreferences extends ExtensionPreferences {
-  override fillPreferencesWindow(
-    window: Adw.PreferencesWindow & {
-      _settings: Gio.Settings;
-    },
-  ): Promise<void> {
-    // Create a settings object and bind the row to our key.
-    // Attach the settings object to the window to keep it alive while the window is alive.
-    window._settings = this.getSettings();
-    window.add(new GeneralPage(window._settings));
-    window.add(new AboutPage(this.metadata));
-    return Promise.resolve();
-  }
-}
+export const getTemplate = (name: string): string =>
+  GLib.uri_resolve_relative(
+    import.meta.url,
+    `ui/${name}.ui`,
+    GLib.UriFlags.NONE,
+  );
