@@ -15,8 +15,8 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.14.0",
-    "@girs/gjs": "^4.0.0-beta.16",
-    "@girs/gnome-shell": "^47.0.0-next.4",
+    "@girs/gjs": "^4.0.0-beta.17",
+    "@girs/gnome-shell": "^47.0.0",
     "@tsconfig/strictest": "^2.0.5",
     "eslint": "^9.14.0",
     "eslint-config-prettier": "^9.1.0",
