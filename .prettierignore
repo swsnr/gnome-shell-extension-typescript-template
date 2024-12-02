@@ -4,8 +4,8 @@
 
 # Package things
 /package.json
+/package-lock.json
 /node_modules/
-/pnpm-lock.yaml
 
 # Files I prefer not to be formatted
 *.md

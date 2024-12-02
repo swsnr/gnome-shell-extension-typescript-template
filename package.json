@@ -3,25 +3,46 @@
   "type": "module",
   "private": true,
   "scripts": {
+    "blueprint": "glob -c 'blueprint-compiler batch-compile ui ui' 'ui/*.blp'",
+    "postblueprint": "git add ui",
     "compile": "tsc --build tsconfig.json",
-    "dist:format": "eslint --no-config-lookup --config eslint.config.dist.js --quiet --fix build/",
-    "check:types": "tsc --build tsconfig.types.json",
+    "postcompile": "eslint --no-config-lookup --config eslint.config.dist.js --quiet --fix .",
+    "prepack": "npm run compile",
+    "pack": "gsebuild pack",
+    "check:types": "tsc --build tsconfig.types.json --force",
+    "xgettext": "gsebuild xgettext",
     "lint": "eslint .",
-    "format": "prettier ."
+    "format": "prettier .",
+    "clean": "rimraf --no-interactive dist build"
   },
   "engines": {
-    "node": ">=20",
-    "pnpm": "^9"
+    "node": ">=23"
   },
   "devDependencies": {
-    "@eslint/js": "^9.14.0",
-    "@girs/gjs": "^4.0.0-beta.17",
     "@girs/gnome-shell": "^47.0.0",
-    "@tsconfig/strictest": "^2.0.5",
-    "eslint": "^9.14.0",
+    "@swsnr/gsebuild": "^0.1.2",
+    "eslint": "^9.16.0",
     "eslint-config-prettier": "^9.1.0",
-    "prettier": "^3.3.3",
-    "typescript": "^5.6.3",
-    "typescript-eslint": "8.12.2"
+    "prettier": "^3.4.1",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.7.2"
+  },
+  "gsebuild": {
+    "gettext": {
+      "sources": ["ui/*.blp"],
+      "copyright-holder": "Sebastian Wiesner <sebastian@swsnr.de>"
+    },
+    "pack": {
+      "copy-to-source": ["ui/*.ui"],
+      "source-directory": "build",
+      "extra-sources": [
+        "lib",
+        "ui",
+        "../LICENSE*",
+        "../README.md",
+        "../icons/"
+      ],
+      "schemas": ["../schemas/*.gschema.xml"]
+    }
   }
 }

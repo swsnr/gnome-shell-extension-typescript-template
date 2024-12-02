@@ -1,18 +1,7 @@
 {
-  "extends": "@tsconfig/strictest/tsconfig.json",
+  "extends": "@swsnr/gsebuild/tsconfig.json",
   "compilerOptions": {
-    "outDir": "build",
-    "target": "ES2022",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "lib": ["ES2022"],
-    "removeComments": false,
-    "skipLibCheck": true
+    "outDir": "build"
   },
-  "include": [
-    // Ambient types
-    "@types/gnome-shell/ambient.d.ts",
-    // Our sources
-    "src/**/*.ts"
-  ]
+  "include": ["@types/gnome-shell/ambient.d.ts", "src/**/*.ts"]
 }
