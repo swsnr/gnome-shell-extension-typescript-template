@@ -1,0 +1,44 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Sebastian Wiesner <sebastian@swsnr.de>
+# This file is distributed under the same license as the typescript-template@swsnr.de package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: typescript-template@swsnr.de\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-02 20:40+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ui/AboutPage.blp:5
+msgid "About"
+msgstr ""
+
+#: ui/AboutPage.blp:44
+msgctxt "about link"
+msgid "Github"
+msgstr ""
+
+#: ui/AboutPage.blp:49
+msgctxt "about link"
+msgid "Issue tracker"
+msgstr ""
+
+#: ui/GeneralPage.blp:5
+msgid "General"
+msgstr ""
+
+#: ui/GeneralPage.blp:10
+msgid "Say hello"
+msgstr ""
+
+#: ui/GeneralPage.blp:11
+msgid "Whether to say hello"
+msgstr ""
